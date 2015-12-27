@@ -1,0 +1,107 @@
+//Variables
+@dark-grey: #2B2B2B;
+
+/*Extra-small mobiles, Universal*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+  display: block;
+}
+
+nav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  height: 3em;
+  width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav-bar {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+}
+
+.right {
+  float: right;
+}
+
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  height: inherit;
+  .main-logo-container {
+    margin-right: 0.45em;
+    display: inherit;
+    height: inherit;
+    .main-logo {
+      width: 3em;
+    }
+  }
+  .nav-btn {
+    display: inherit;
+    color: @dark-grey;
+    font-weight: 800;
+    font-size: 1.3em;
+    margin: 0.3rem 0.45rem;
+    border-bottom: 0 solid cyan;
+    transition: border-bottom 0.1s;
+    -webkit-transition: border-bottom 0.1s;
+    -moz-transition: border-bottom 0.1s;
+    &:hover:not(.active) {
+      border-bottom: 0.3rem solid cyan;
+    }
+  }
+  .icon-container {
+    display: inherit;
+    margin: 0.5em 0.5em;
+    height: 1.8em;
+    .search-icon {
+      width: 1em;
+    }
+    .my-account-icon {
+      width: 2em;
+    }
+  }
+  &:last-child>.icon-container {
+    margin-left: 0.5em;
+    margin-right: 0;
+  }
+}
+
+
+/*For mobiles*/
+
+@media only screen and (min-width: 34em) {}
+
+
+/*For tablets*/
+
+@media only screen and (min-width: 48em) {}
+
+
+/*For desktops*/
+
+@media only screen and (min-width: 62em) {}
+
+
+/*For extra large desktops*/
+
+@media only screen and (min-width: 75em) {}
