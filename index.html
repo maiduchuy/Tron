@@ -10,7 +10,7 @@
   <link href="Stylesheets/normalize.css" rel="stylesheet" type="text/css">
   <link href="Stylesheets/mytemplate.css" rel="stylesheet" type="text/css">
   <link href="Stylesheets/tron.css" rel="stylesheet" type="text/css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,28 +22,33 @@
             <img class="main-logo" src="Images/tron-logo.svg" alt="logo">
           </a>
         </li>
-        <li class="nav-item"><a href="dummy" class="nav-btn">New</a></li>
+        <li class="nav-item"><a id="nav-new" href="dummy" class="nav-btn">New</a></li>
         <li class="nav-item"><a href="dummy" class="nav-btn">Top</a></li>
       </ul>
       <ul class="nav-bar right">
         <li class="nav-item">
-          <a href="dummy" class="icon-container">
-            <img class="my-account-icon" src="Images/my-account-icon.svg" alt="my account">
+          <a id="account-btn" href="dummy" class="icon-container">
+            <img class="account-icon" src="Images/my-account-icon.svg" alt="my account">
           </a>
         </li>
         <li class="nav-item">
-          <a href="dummy" class="icon-container">
+          <a id="search-btn" href="dummy" class="icon-container" role="button">
             <img class="search-icon" src="Images/search-icon.svg" alt="search">
           </a>
         </li>
       </ul>
+      <aside id="search-wrapper" class="search-wrapper">
+        <form id="search-form">
+          <input id="search-field" class="search-field" type="text" placeholder="Search" autocomplete="off">
+        </form>
+      </aside>
     </nav>
   </header>
   <div class="container">
     <h1>Example</h1>
   </div>
 
-
+  <script src="Javascript/tron.js"></script>
 </body>
 
 </html>
