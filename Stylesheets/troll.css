@@ -1,0 +1,119 @@
+/*Extra-small mobiles, Universal*/
+body {
+  font-family: 'Open sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+  display: block;
+}
+nav {
+  position: relative;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  height: 3em;
+  width: 100%;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav-bar {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: inherit;
+}
+.right {
+  float: right;
+}
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  height: inherit;
+}
+.nav-item .main-logo-container {
+  margin-right: 0.45em;
+  display: inherit;
+  height: inherit;
+}
+.nav-item .main-logo-container .main-logo {
+  width: 3em;
+}
+.nav-item .nav-btn {
+  display: inherit;
+  color: #2B2B2B;
+  font-weight: 800;
+  font-size: 1.3em;
+  margin: 0.5rem 0.45rem;
+  border-bottom: 0 solid cyan;
+  transition: border-bottom 0.1s;
+  -webkit-transition: border-bottom 0.1s;
+  -moz-transition: border-bottom 0.1s;
+}
+.nav-item .nav-btn:hover:not(.active) {
+  border-bottom: 0.3rem solid cyan;
+}
+.nav-item .icon-container {
+  display: inherit;
+  margin: 0.5em 0.5em;
+  height: 1.8em;
+}
+.nav-item .icon-container .search-icon {
+  width: 1em;
+}
+.nav-item .icon-container .account-icon {
+  width: 2em;
+}
+.nav-item:last-child > .icon-container {
+  margin-left: 0.5em;
+  margin-right: 0;
+}
+.search-form {
+  position: absolute;
+  top: 0.5em;
+  right: 2.25em;
+  left: 4.25em;
+  display: block;
+  z-index: -1;
+  height: inherit;
+}
+.search-form .search-field {
+  background: #E8E8E8;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  display: none;
+  border: 0;
+  padding: 0 1em;
+  margin: 0.4rem 0;
+  width: 100%;
+  height: 2em;
+}
+.search-form .search-field::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .search-field:-moz-placeholder {
+  display: none;
+}
+.search-form .search-field::-moz-placeholder {
+  display: none;
+}
+.search-form .search-field:-ms-input-placeholder {
+  display: none;
+}
+/*For mobiles*/
+/*For tablets*/
+/*For desktops*/
+/*For extra large desktops*/
